@@ -106,6 +106,17 @@ catalog:
   # Experimental: Always use the search method in UrlReaderProcessor.
   # New adopters are encouraged to enable it as this behavior will be the default in a future release.
   useUrlReadersSearch: true
+  providers:
+    githubOrg:
+      id: 'github-local'
+      githubUrl: 'https://github.com/TOEN-A'
+      schedule:
+        frequency:
+          minutes: 60
+        timeout:
+          minutes: 5
+        initialDelay:
+          seconds: 10
 
 kubernetes:
   # see https://backstage.io/docs/features/kubernetes/configuration for kubernetes configuration options
